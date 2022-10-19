@@ -164,7 +164,9 @@ img {
 }
 .smartphone:hover,
 .smartphone:focus {fill:var(--active-color)}
+
 /*main index*/
+
     /*основная секция*/
     .title-section {
         background: #2F303A;
