@@ -137,17 +137,22 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.adres-header-mail:hover, 
-.adres-header-mail:focus {color:var(--active-color)}
+
+.adres-header-mail:hover,
+.adres-header-mail:focus {
+    color: var(--active-color)
+}
 
 .envelope {
     margin-right: 10px;
     fill: #757575;
 }
+
 .envelope:hover,
 .envelope:focus {
-    fill:var(--active-color)
+    fill: var(--active-color)
 }
+
 .adres-header-tel {
     color: #757575;
     text-decoration: none;
@@ -155,22 +160,38 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.adres-header-tel:hover, 
-.adres-header-tel:focus {color:var(--active-color)}
+
+.adres-header-tel:hover,
+.adres-header-tel:focus {
+    color: var(--active-color)
+}
 
 .smartphone {
     margin-right: 10px;
     fill: #757575;
 }
-.smartphone:hover,
-.smartphone:focus {fill:var(--active-color)}
 
+.smartphone:hover,
+.smartphone:focus {
+    fill: var(--active-color)
+}
 /*main index*/
 
     /*основная секция*/
+    .title-img {
+        max-width: 1600px;
+        min-height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #C4C4C4;
+        background-image: /*linear-gradient(rgba(47, 48, 58, 0.4)rgba(47, 48, 58, 0.4)),*/
+        url("../img/img-overlay.jpg");
+        background-size: contain;
+        
+    }
+    
     .title-section {
-        background: #2F303A;
-
+        
         padding-top: 200px;
         padding-bottom: 200px;
     }
@@ -183,7 +204,6 @@ img {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #FFFFFF;
-        background-color: #2F303A;
 
         width: 696px;
         margin-left: auto;
@@ -444,12 +464,12 @@ img {
 .logo-footer-span {
     color: #FFFFFF;
 }
-.footer-flex {
+
+.f-flex {
     display: flex;
 }
-.footer-flex-adres {
-    width: 231px;
-}
+
+
 .adres-footer {
     font-style: normal;
     font-weight: 400;
@@ -616,8 +636,12 @@ img {
         flex-wrap: wrap;
              
         margin-top: 50px;
-        
     }
+    .jobs-img-ul .item:hover,
+    .jobs-img-ul .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    
     .jobs-img-ul .item {
         margin-right: 30px;
         margin-bottom: 30px;
@@ -628,7 +652,7 @@ img {
     .jobs-img-ul .item:nth-last-child(-n+3) {
         margin-bottom: 0px;
     }
-
+    
     .jobs-card {
         width: 370px;
         padding: 20px 24px;
