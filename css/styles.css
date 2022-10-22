@@ -133,7 +133,9 @@ img {
 .adres-header-mail {
     color: #757575;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -141,6 +143,10 @@ img {
 .adres-header-mail:hover,
 .adres-header-mail:focus {
     color: var(--active-color)
+}
+
+.adres-header-mail:hover .envelope {
+    fill: var(--active-color)
 }
 
 .envelope {
@@ -156,7 +162,9 @@ img {
 .adres-header-tel {
     color: #757575;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -164,6 +172,9 @@ img {
 .adres-header-tel:hover,
 .adres-header-tel:focus {
     color: var(--active-color)
+}
+.adres-header-tel:hover .smartphone {
+    fill: var(--active-color)
 }
 
 .smartphone {
@@ -175,6 +186,7 @@ img {
 .smartphone:focus {
     fill: var(--active-color)
 }
+
 /*main index*/
 
     /*основная секция*/
@@ -183,9 +195,9 @@ img {
         min-height: 600px;
         margin-left: auto;
         margin-right: auto;
-        background-image:linear-gradient(rgba(47, 48, 58, 0.4)rgba(47, 48, 58, 0.4)),
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
         url("../img/img-overlay.jpg");
-        background-size: contain;
+        background-size: cover;
         background-color: #C4C4C4;
     }
     
@@ -401,6 +413,11 @@ img {
     .social-link-img:focus {
         background-color: var(--active-color)
     }
+
+    .social-link-img:hover .social-link-icon {
+        fill: #EEEEEE;
+    }
+
     .social-link-icon {
         fill: #AFB1B8;
     }
@@ -449,6 +466,9 @@ img {
     .clients-img:focus {
         border-color: var(--active-color);
     }
+    .clients-img:hover .clients-icon {
+        fill: var(--active-color);
+    }
     .clients-icon:hover,
     .clients-icon:focus {
         fill: var(--active-color);
@@ -466,9 +486,12 @@ img {
 
 .f-flex {
     display: flex;
+    align-items: baseline;
 }
 
-
+.f-flex .item {
+    margin-right: 70px;
+}
 .adres-footer {
     font-style: normal;
     font-weight: 400;
@@ -481,10 +504,10 @@ img {
 .adres-footer-ul {
     list-style-type: none;
 }
-.adres-footer-ul .adres-footer-li {
+.adres-footer-ul .item {
     margin-top: 9px;
 }
-.adres-footer-ul .adres-footer-li:first-child {
+.adres-footer-ul .item:first-child {
     margin-top: 0px;
 }
 
