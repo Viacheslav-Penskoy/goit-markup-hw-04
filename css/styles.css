@@ -148,6 +148,9 @@ img {
 .adres-header-mail:hover .envelope {
     fill: var(--active-color)
 }
+.adres-header-mail:focus .envelope {
+    fill: var(--active-color)
+}
 
 .envelope {
     margin-right: 10px;
@@ -174,6 +177,9 @@ img {
     color: var(--active-color)
 }
 .adres-header-tel:hover .smartphone {
+    fill: var(--active-color)
+}
+.adres-header-tel:focus .smartphone {
     fill: var(--active-color)
 }
 
@@ -389,9 +395,8 @@ img {
     .social-link {
         list-style-type: none;
         display: flex;
+        justify-content: center;
         
-        padding-left: 32px;
-        padding-right: 32px;
         padding-bottom: 30px;
     }
     .social-link .item {
@@ -415,6 +420,9 @@ img {
     }
 
     .social-link-img:hover .social-link-icon {
+        fill: #EEEEEE;
+    }
+    .social-link-img:focus .social-link-icon {
         fill: #EEEEEE;
     }
 
@@ -469,6 +477,9 @@ img {
     .clients-img:hover .clients-icon {
         fill: var(--active-color);
     }
+    .clients-img:focus .clients-icon {
+        fill: var(--active-color);
+    }
     .clients-icon:hover,
     .clients-icon:focus {
         fill: var(--active-color);
@@ -487,11 +498,17 @@ img {
 .f-flex {
     display: flex;
     align-items: baseline;
+
 }
 
 .f-flex .item {
     margin-right: 70px;
 }
+
+.f-flex .item:last-child {
+    margin-right: 0px;
+}
+
 .adres-footer {
     font-style: normal;
     font-weight: 400;
@@ -659,8 +676,11 @@ img {
              
         margin-top: 50px;
     }
-    .jobs-img-ul .item:hover,
-    .jobs-img-ul .item:focus {
+    .jobs-img-link {
+        display: block;
+    }
+    .jobs-img-link:hover,
+    .jobs-img-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
     
